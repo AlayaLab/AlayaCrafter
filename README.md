@@ -4,7 +4,7 @@
 
 ### [Alaya Lab](https://github.com/AlayaLab)
 
-[![Project Page](https://img.shields.io/badge/Project-Page-1683D8)](https://alayacraftertest.y0uroy.chatgpt.site/alaya-kit/index.html)
+[![Project Page](https://img.shields.io/badge/Project-Page-1683D8)](https://alayalab.github.io/AlayaCrafter/)
 ![Paper](https://img.shields.io/badge/Paper-Coming%20Soon-808080)
 
 </div>
@@ -13,7 +13,8 @@
 
 AlayaCrafter 项目资料库，用于整理项目主页、论文与展示素材。
 
-- **Project Page:** [AlayaCrafter](https://alayacraftertest.y0uroy.chatgpt.site/alaya-kit/index.html)
+- **Project Page:** [GitHub Pages（预留，尚未上线）](https://alayalab.github.io/AlayaCrafter/)
+- **Demo:** [AlayaCrafter](https://alayacraftertest.y0uroy.chatgpt.site/alaya-kit/index.html)
 - **Paper:** 待添加
 
 ## Repository Structure
@@ -28,4 +29,5 @@ AlayaCrafter/
 
 ## Updates
 
-- 项目资料与论文将在准备完成后加入。
+- GitHub Pages 地址已预留，等待内容同步及启用 Pages。
+- 页面占位文件位于 `project-page/index.html`，后续可替换为正式项目主页。
