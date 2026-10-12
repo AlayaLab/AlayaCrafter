@@ -4,7 +4,7 @@
 
 ### Open-source 3D Foundation Model for AI-Native Game Engine
 
-[Yonghao Yu](https://scholar.google.com/citations?user=lwuwuAYAAAAJ) · [Ruihan Yu](https://auroraryan0301.github.io/) · [Sho Kuno](https://shokuno5.github.io/) · [Muyao Niu](https://myniuuu.github.io/) · [Runyi Li](https://lirunyi2001.github.io/) · [Kaipeng Zhang](https://kpzhang93.github.io/) · [Zhixiang Wang](https://lightchaserx.github.io/)
+[Yonghao Yu](https://scholar.google.com/citations?user=lwuwuAYAAAAJ) · [Ruihan Yu](https://auroraryan0301.github.io/) · [Sho Kuno](https://shokuno5.github.io/) · [Muyao Niu](https://myniuuu.github.io/) · [Yu-Ju Tsai](https://liagm.github.io/) · [Runyi Li](https://lirunyi2001.github.io/) · [Kaipeng Zhang](https://kpzhang93.github.io/) · [Zhixiang Wang](https://lightchaserx.github.io/)
 
 **[AlayaLab](https://github.com/AlayaLab)**
 
