@@ -52,6 +52,7 @@ The **[3D asset library](https://alaya-lab.github.io/AlayaCrafter/space-kit.html
 - [x] Interactive 3D asset library and asset downloads
 - [ ] AlayaCrafter-Base code
 - [ ] Model weights
+- [ ] AlayaCrafter workflow and tools
 - [ ] Paper and workflow documentation
 
 Installation instructions, model download links and paper details will be added here as each release becomes available.
