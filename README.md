@@ -2,32 +2,56 @@
 
 # AlayaCrafter
 
-### [Alaya Lab](https://github.com/AlayaLab)
+### Open-source 3D Foundation Model for AI-Native Game Engine
 
-[![Project Page](https://img.shields.io/badge/Project-Page-1683D8)](https://alayalab.github.io/AlayaCrafter/)
-![Paper](https://img.shields.io/badge/Paper-Coming%20Soon-808080)
+[Yonghao Yu](https://scholar.google.com/citations?user=lwuwuAYAAAAJ) · [Ruihan Yu](https://auroraryan0301.github.io/) · [Sho Kuno](https://shokuno5.github.io/) · [Muyao Niu](https://myniuuu.github.io/) · [Runyi Li](https://lirunyi2001.github.io/) · [Kaipeng Zhang](https://kpzhang93.github.io/) · [Zhixiang Wang](https://lightchaserx.github.io/)
+
+**[AlayaLab](https://github.com/AlayaLab)**
+
+[![Project Page](https://img.shields.io/badge/Project-Page-1683D8)](https://alaya-lab.github.io/AlayaCrafter/)
+[![3D Asset Library](https://img.shields.io/badge/3D-Asset%20Library-5B6EE1)](https://alaya-lab.github.io/AlayaCrafter/space-kit.html)
+
+**Compact meshes. Explicit topology. Editable worlds.**
 
 </div>
 
 ## Overview
 
-AlayaCrafter 项目资料库，用于整理项目主页、论文与展示素材。
+AlayaCrafter brings compact, editable 3D assets into an explicit scene state for AI-native game engines. **AlayaCrafter-Base** turns a single image into a native triangle mesh with a controllable face budget. Programs and agents can inspect these meshes, assemble them into scenes, and author their motion.
 
-- **Project Page:** [GitHub Pages（预留，尚未上线）](https://alayalab.github.io/AlayaCrafter/)
-- **Demo:** [AlayaCrafter](https://alayacraftertest.y0uroy.chatgpt.site/alaya-kit/index.html)
-- **Paper:** 待添加
+This is the official repository for the AlayaCrafter model and workflow. The project website and interactive asset library are available now; code, model weights and the paper are planned for release here.
 
-## Repository Structure
+## Designed for Agent-Efficient 3D Authoring
 
-```text
-AlayaCrafter/
-├── README.md          # 项目入口
-├── assets/            # 图片、视频封面等展示素材
-├── project-page/      # 项目主页源文件
-└── papers/            # 论文 PDF、引用信息等
-```
+AI-native engines need a 3D state that their simulation, controllers and agents can read and edit. Compact geometry and explicit triangle connectivity give agents concrete objects to work with. Geometry, transforms, cameras and motion remain accessible throughout scene construction and revision.
 
-## Updates
+AlayaCrafter-Base generates vertices coarse to fine with a diffusion transformer over a sparse octree, then predicts connectivity with a second diffusion transformer in the latent space of a topology autoencoder. A face budget controls mesh complexity.
 
-- GitHub Pages 地址已预留，等待内容同步及启用 Pages。
-- 页面占位文件位于 `project-page/index.html`，后续可替换为正式项目主页。
+## From Meshes to Worlds
+
+The authoring workflow carries generated geometry into ordinary 3D tools:
+
+1. **Generate meshes:** create compact geometry with explicit vertices and triangle faces.
+2. **Assemble scenes:** arrange assets and parts in an editable 3D scene.
+3. **Author materials and motion:** add UVs, materials, rigs, part transforms and animation.
+4. **Render the scene:** define cameras, lighting and effects to produce geometry and material control videos.
+
+A video-generation model can use a control video as a soft condition for an additional appearance stage. The base model generates mesh geometry and connectivity; UVs, materials, rigs, scene assembly and choreography belong to the authoring workflow.
+
+## Explore Space Saga
+
+**[Space Saga](https://alaya-lab.github.io/AlayaCrafter/#saga)** showcases twelve scenes built from the space asset kit, including stations, fleets, shipyards, moon bases and alien encounters. Compare **Materials** with **Gray mesh** or **Normals** on the same scene timeline.
+
+All twelve scenes use AlayaCrafter generated meshes with their original topology.
+
+The **[3D asset library](https://alaya-lab.github.io/AlayaCrafter/space-kit.html)** contains **123 assets**, with input-image, gray-mesh, topology and material views, interactive 3D inspection and original GLB downloads. Explore modular assemblies and scenes built from the kit, with **Materials**, **Gray mesh** and **Topology** comparisons.
+
+## Release Status
+
+- [x] Project website and Space Saga showcase
+- [x] Interactive 3D asset library and asset downloads
+- [ ] AlayaCrafter-Base code
+- [ ] Model weights
+- [ ] Paper and workflow documentation
+
+Installation instructions, model download links and paper details will be added here as each release becomes available.
