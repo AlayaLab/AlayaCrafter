@@ -1,8 +1,6 @@
 <div align="center">
 
-# AlayaCrafter
-
-### Open-source 3D Foundation Model for AI-Native Game Engine
+# AlayaCrafter: An Open-Source 3D Foundation Stack for AI-Native Games
 
 
 **[AlayaLab](https://github.com/AlayaLab)**
@@ -39,7 +37,7 @@ A video-generation model can use a control video as a soft condition for an addi
 
 ## Explore Space Saga
 
-**[Space Saga](https://alaya-lab.github.io/AlayaCrafter/#saga)** showcases twelve scenes built from the space asset kit, including stations, fleets, shipyards, moon bases and alien encounters. Compare **Materials** with **Gray mesh** or **Normals** on the same scene timeline.
+**[Space Saga](https://alaya-lab.github.io/AlayaCrafter/#saga)** showcases twelve scenes built from the space asset kit, including stations, fleets, shipyards, moon bases and alien encounters. Compare **Materials** with **Gray mesh** or **Topology** on the same scene timeline.
 
 All twelve scenes use AlayaCrafter generated meshes with their original topology.
 
